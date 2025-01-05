@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUET Medical Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>RUET Medical Centre</h1>
+        <p>Doctor Scheduling and Appointment System</p>
+    </header>
+    <main>
+        <section id="doctor-list">
+            <h2>Doctor and Staff List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+
+                        <th>Mobile</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. Md. Moksed Ali <br><small>Chief Medical Officer</small></td>
+
+                        <td>+8801915997662</td>
+                        <td>Sat-Thu: 8:00 AM - 1:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Farhana Rahman <br><small>Medical Officer</small></td>
+
+                        <td>+8801715204378</td>
+                        <td>Sat-Thu: 9:00 AM - 3:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Md. Azizul Islam <br><small>Senior Medical Officer</small></td>
+
+                        <td>+8801712637265<br>+8801919637265</td>
+                        <td>Sat-Thu: 3:00 PM - 8:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mr Tanzir Ahmed Tushar <br><small>Specialist Clinical Psychologist</small></td>
+
+                        <td>+8801712265883</td>
+                        <td>Sun,Tue,Thu: 3:00 PM - 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Md. Firoz Uddin <br><small>Eye Specialist</small></td>
+
+                        <td>+8801717725675</td>
+                        <td>Wed: 9:30 AM - 11:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Md. Mosadderul Haque <br><small>Dentist</small></td>
+
+                        <td>+8801790443735</td>
+                        <td>Mon: 1:00 AM - 2:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Md. Golam Muktadir <br><small>Physiotherapist</small></td>
+
+                        <td>+88017150262873</td>
+                        <td>Sat: 8:30 AM - 2:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Md. Joynal Abedin <br><small>Senior Principal Medical Technologist</small></td>
+
+                        <td>+8801191014940</td>
+                        <td>Sat-Thu: 5:00 PM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Md. Saroar Jahan <br><small>Assistant Principal Medical Technologist</small></td>
+
+                        <td>+8801733068146</td>
+                        <td>Sat-Thu: 8:00 AM - 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Md. Altaf Hossain <br><small>Senior Medical Technologist(Path.)</small></td>
+
+                        <td>+8801191014940</td>
+                        <td>Sat-Thu: 8:00 AM - 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Mst. Sultana Parvin <br><small>Principal Staff Nurse</small></td>
+
+                        <td>+8801731913528</td>
+                        <td>Sat-Thu: 8:00 AM - 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Mst. Razia Khatun <br><small>Principal Staff Nurse</small></td>
+
+                        <td>+8801987215188</td>
+                        <td>Sat-Thu: 5:00 PM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Md. Montaj Ali Montu <br><small>MLSS</small></td>
+
+                        <td>-</td>
+                        <td>Sat-Thu: 8:00 AM - 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Md. Amirul Islam <br><small>MLSS</small></td>
+
+                        <td>-</td>
+                        <td>Sat-Thu: 5:00 PM - 9:00 PM</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <section id="appointment">
+            <h2>Book an Appointment</h2>
+            <form action="appointment.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="doctor">Choose a Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="Dr. Md. Moksed Ali">Dr. Md. Moksed Ali (Sat-Thu: 8:00 AM - 1:30 PM)</option>
+                    <option value="Dr. Farhana Rahman">Dr. Farhana Rahman (Sat-Thu: 9:00 AM - 3:00 PM)</option>
+                    <option value="Dr. Md. Azizul Islam">Dr. Md. Azizul Islam (Sat-Thu: 3:00 PM - 8:00 PM)</option>
+                    <option value="Mr Tanzir Ahmed Tushar">Mr Tanzir Ahmed Tushar (Sun,Tue,Thu: 3:00 PM - 6:00 PM)</option>
+                    <option value="Dr. Md. Firoz Uddin">Dr. Md. Firoz Uddin (Wed: 9:30 AM - 11:30 AM)</option>
+                    <option value="Dr. Md. Mosadderul Haque">Dr. Md. Mosadderul Haque (Mon: 1:00 AM - 2:30 PM)</option>
+                    <option value="Md. Golam Muktadir">Md. Golam Muktadir (Sat: 8:30 AM - 2:30 PM)</option>
+                    
+                </select>
+                <label for="date">Choose a Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Choose a Time:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 RUET Medical Centre</p>
+        <p>
+            <strong>Service Time:</strong> <br> Saturday-Thursday: 07:30AM to 10:00PM <br> Lunch Break: 1:30PM to 3:00PM <br> Friday: Off Day <br><br>
+            <strong>Ambulance Service:</strong> 24 hours Every Day <br>
+            <em>Note: For Ambulance service, please contact any of the above respectable doctors.</em>
+        </p>
+    </footer>
+</body>
+
+</html>
